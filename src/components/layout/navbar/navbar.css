@@ -1,0 +1,11 @@
+.navbarHeader {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+    }
+
+.navbarLink {
+    color: var(--primaryColor);
+}

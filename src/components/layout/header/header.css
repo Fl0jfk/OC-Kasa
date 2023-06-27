@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto;
+} 
+
+.containerLogoHeader {
+    width: 100%;
+}
+
+.logoHeader {
+    width: 150px;
+}

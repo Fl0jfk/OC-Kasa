@@ -1,0 +1,22 @@
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLogo {
+ margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+    .footerLogo {
+        margin-top: 0px;
+    }
+}
+
+.footerCopyright {
+    color: white;
+}
