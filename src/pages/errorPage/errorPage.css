@@ -1,0 +1,25 @@
+.error__page {
+    color:var(--primaryColor);
+    text-align: center;
+    margin-bottom: 60px;
+    height: 67vh;
+}
+
+.errorPage404 {
+        font-size: 288px;
+        font-weight: 700;               
+        margin-bottom: 43px;
+}
+
+.textErrorPage {
+        font-size: 36px;
+        font-weight: 500;        
+        margin-bottom: 75px;      
+}
+
+.linkErrorPageToHome {   
+    margin-top: 60px;
+    color:var(--primaryColor);
+    text-decoration: underline;
+    font-size: 18px;  
+}

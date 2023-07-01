@@ -5,7 +5,7 @@ import HousingGrid from '../../components/housingGrid/housingGrid';
 function Home (){
     return (
         <div>
-           <Banner/>
+           <Banner page="bannerImgHome"/>
            <HousingGrid/>
         </div>
     )
