@@ -1,7 +1,7 @@
 .containerBanner {
     position: relative;
     width: 90%;
-    margin: auto; 
+    margin: 0px auto; 
     height : 200px;
     margin-bottom: 50px;
 }
