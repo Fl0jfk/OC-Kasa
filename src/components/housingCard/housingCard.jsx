@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './housingCard.css'
+import './housingCard.scss'
 
 function HousingCard(props){    
     return (

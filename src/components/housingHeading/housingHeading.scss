@@ -1,0 +1,16 @@
+.housingHeadingSection {
+    display :flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.ulHousingHeading {
+    display : flex;
+    gap : 10px;
+}
+
+.ulHousingHeading > li {
+    background-color: var(--primaryColor);
+    
+}

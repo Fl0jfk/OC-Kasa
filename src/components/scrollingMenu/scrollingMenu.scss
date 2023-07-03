@@ -1,0 +1,56 @@
+.scrollingMenuPanel {
+    margin-top: 25px;
+    flex-basis: 50%;
+    overflow: hidden;
+    position: relative; 
+    p {
+        margin-block: 0;
+    }
+    .scrollingMenuTitle {
+        background-color: var(--primaryColor);
+        color: var(--tertiaryColor);
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px 20px 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        @media screen and (width <= 768px) {
+            font-size: 13px;
+        }        
+        i {
+            font-size: 24px; 
+            cursor: pointer;
+            @media screen and (width <= 768px) {
+                font-size: 16px;
+            } 
+        }
+    }
+    .scrollingMenuContent {
+        border-radius: 10px 10px 5px 5px;
+        background-color: var(--backgroundGrey);
+        padding: 20px;
+        position: relative;
+        font-size: 18px;              
+        &.visible {
+            animation: slide-in 0.2s ease-in-out;
+        }
+        &.hidden {
+            display: none;
+        }
+        @media screen and (width <= 768px) {
+            font-size: 12px;
+        } 
+    }
+}
+
+@keyframes slide-in {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

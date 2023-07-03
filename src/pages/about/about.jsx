@@ -1,12 +1,12 @@
 import React from 'react';
 import Banner from '../../components/banner/banner';
 import ScrollingMenu from '../../components/scrollingMenu/scrollingMenu';
-import './about.css'
+import './about.scss'
 
 function About (){
     return (
         <div className="aboutPage">
-            <Banner page="bannerImgAbout"/>
+            <Banner local="aboutPage"/>
             <div>
                 <ScrollingMenu title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."/>
                 <ScrollingMenu title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>

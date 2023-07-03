@@ -1,0 +1,20 @@
+.housing {
+    display: flex;
+    gap : 20px;
+    width: 85%;
+    margin: auto;
+}
+
+.apartment_page{
+    color:var(--primaryColor);
+}    
+
+.apartment__description__area{
+    display: flex;
+    gap:50px;
+    margin-bottom: 50px;      
+    @media screen and (width <= 768px) {
+        flex-direction: column;
+        gap:0;        
+    }
+}
