@@ -1,14 +1,13 @@
-.error__page {
+.errorPage {
     color:var(--primaryColor);
     text-align: center;
     margin-bottom: 60px;
     height: 67vh;
-}
-
-.errorPage404 {
+    &404 {
         font-size: 288px;
         font-weight: 700;               
         margin-bottom: 43px;
+    }
 }
 
 .textErrorPage {

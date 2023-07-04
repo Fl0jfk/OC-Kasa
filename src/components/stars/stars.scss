@@ -1,0 +1,17 @@
+.housingRatingStars {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 25px;
+    color: var(--starDefault);
+    @media screen and (width <= 768px) {
+        font-size: 18px;
+        margin-top: 20px;
+    } 
+}
+
+.valid {
+    color: var(--primaryColor);
+}   

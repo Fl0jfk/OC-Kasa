@@ -1,6 +1,6 @@
 .housingCard {
     background: linear-gradient(to top, var(--secondaryColor),var(--primaryColor));
-    border-radius: 25px;    
+    border-radius: 15px;    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;   
@@ -8,30 +8,21 @@
     text-decoration: none;
     position: relative;
 }
-
-.housingCard :hover {
-    transform: scale(1.03);
-}
-      
+   
 .imgHousing {
         width: 100%;
         height: 100%;        
         object-fit: cover;
-        border-radius: 25px;
+        border-radius: 15px;
         filter: brightness(0.8);
 }  
 
 .subtitleHousing {
-        width: 80%;
-        margin-left:20px;
-        margin-bottom: 20px;
+        width: 40%;
+        text-align: left;
+        margin-left: 15px;
+        margin-bottom: 15px;
         color:var(--tertiaryColor);
         position: absolute;
         font-size: 18px;        
-}
-
-@media screen and (width <= 768px) { 
-    .housingCard :hover {
-        transform: scale(1);
-    }                   
 }

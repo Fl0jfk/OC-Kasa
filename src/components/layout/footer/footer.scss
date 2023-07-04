@@ -1,4 +1,4 @@
-footer {
+.footer {
     width: 100%;
     height: 150px;
     display: flex;
@@ -6,17 +6,18 @@ footer {
     background-color: black;
     justify-content: center;
     align-items: center;
-}
-
-.footerLogo {
- margin-top: 30px;
-}
-@media screen and (max-width: 768px) {
-    .footerLogo {
-        margin-top: 0px;
+    @media screen and (width <= 768px) { 
+        height: 200px;
+    }
+    &Copyright {
+        color: white;
+    }
+    &Logo {
+        margin-top: 30px;
+        @media screen and (max-width: 768px) {
+            margin-top: 0px;
+       }
     }
 }
 
-.footerCopyright {
-    color: white;
-}
+

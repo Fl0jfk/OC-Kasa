@@ -1,8 +1,12 @@
 .scrollingMenuPanel {
     margin-top: 25px;
+    margin-bottom: 15px;
     flex-basis: 50%;
     overflow: hidden;
-    position: relative; 
+    position: relative;
+    @media screen and (width <= 768px) {
+        margin-top: 20px;
+    }
     p {
         margin-block: 0;
     }
@@ -16,13 +20,13 @@
         justify-content: space-between;
         cursor: pointer;
         @media screen and (width <= 768px) {
-            font-size: 13px;
+            font-size: 16px;
         }        
         i {
             font-size: 24px; 
             cursor: pointer;
             @media screen and (width <= 768px) {
-                font-size: 16px;
+                font-size: 20px;
             } 
         }
     }
@@ -32,8 +36,8 @@
         padding: 20px;
         position: relative;
         font-size: 18px;              
-        &.visible {
-            animation: slide-in 0.2s ease-in-out;
+        &.active {
+            animation: slide-in 0.3s ease-in-out;
         }
         &.hidden {
             display: none;
@@ -46,7 +50,7 @@
 
 @keyframes slide-in {
     0%{
-        transform: translateY(-100%);
+        transform: translateY(150%);
         opacity: 0;
     }
     100%{

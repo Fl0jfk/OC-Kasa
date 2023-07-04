@@ -8,10 +8,10 @@ function HousingHeading (props) {
         <section className="housingHeadingSection">
             <div>
                 <h1>{props.title}</h1>
-                <p>{props.location}</p>
+                <h2>{props.location}</h2>
                 <ul className="ulHousingHeading">{props.tags}</ul>
             </div>
-            <div>
+            <div className="sectionAuthor">
                 <AuthorPrez authorName={props.authorName.name} authorPicture={props.authorName.picture}/>
                 <Stars stars={props.stars}/>
             </div>

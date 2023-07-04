@@ -9,11 +9,11 @@ import ErrorPage from './pages/errorPage/errorPage';
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/housing/:id" element={<HousingPage />} />
-        <Route path="/about" element={<About />} />
+        <Route  path="/about/" element={<About />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

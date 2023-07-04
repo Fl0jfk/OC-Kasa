@@ -3,18 +3,12 @@
     gap : 20px;
     width: 85%;
     margin: auto;
-}
-
-.apartment_page{
-    color:var(--primaryColor);
-}    
-
-.apartment__description__area{
-    display: flex;
-    gap:50px;
-    margin-bottom: 50px;      
+    min-height: 17vh;
     @media screen and (width <= 768px) {
         flex-direction: column;
-        gap:0;        
+        width: 87%;
+        gap : 0px;
+        margin: 0px auto;
+        min-height: auto;
     }
 }

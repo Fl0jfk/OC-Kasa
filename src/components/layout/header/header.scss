@@ -1,14 +1,15 @@
-header {
+.header {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 50px auto;
-} 
-
-.containerLogoHeader {
-    width: 100%;
-}
-
-.logoHeader {
-    width: 150px;
+    @media screen and (width <= 768px) {
+        margin: 20px auto;
+    }
+    &ContainerLogo {
+        width: 100%;
+    }
+    &Logo {
+        width: 150px;
+    }
 }

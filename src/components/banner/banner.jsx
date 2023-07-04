@@ -37,28 +37,28 @@ const imgOrCarousel = () => {
         if(imageBannerLocal === "homePage") {
         return (
                 <>
-                    <img src={bannerHome} className=" show" alt="Img de bannière" />
+                    <img src={bannerHome} className=" show littleSize" alt="Img de bannière" />
                     <h1 className="titleBanner">Chez vous, partout et ailleurs</h1>
                 </>
         );
         } else if (imageBannerLocal ==="aboutPage");
-        return  <img src={bannerAbout} className=" show" alt="Img de bannière" />;
+        return  <img src={bannerAbout} className=" show littleSize" alt="Img de bannière" />;
     } else {
     return imageBanner.map((pic, index) => (
-        <img key={pic} src={pic} alt="Img de bannière" className={getClassName(index)} />
+        <img key={pic} src={pic} alt="Img de bannière" className={getClassName(index)}/>
     ))};
 }    
 
 return(
-    <div className="imgBanner">
+    <div>
         {imgNotLocal() && (
             <>
-            <span className="slideNumber">{onPageImg + 1}/{imageBanner.length}</span>               
-            <button className="btn btnNext" onClick={nextPicture}><i className="fa-solid fa-chevron-right"></i></button>
-            <button className="btn btnPrevious" onClick={previousPicture}><i className="fa-solid fa-chevron-left"></i></button>
+                <span className="slideNumber">{onPageImg + 1}/{imageBanner.length}</span>  
+                <button className="btn btnPrevious" onClick={previousPicture}><i className="fa-solid fa-chevron-left"></i></button>
+                <button className="btn btnNext" onClick={nextPicture}><i className="fa-solid fa-chevron-right"></i></button>            
             </>
         )}
-        <div className="imgContainer"> {imgOrCarousel()} </div>            
+        <div className={`imgContainer ${imageBannerLocal ? "littleSize" : ""}`}> {imgOrCarousel()} </div>            
     </div>
 );
 };

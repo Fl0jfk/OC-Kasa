@@ -3,8 +3,7 @@ import './housingCard.scss'
 
 function HousingCard(props){    
     return (
-        <Link
-         to={`/housing/${props.id}`}
+        <Link to={`/housing/${props.id}`}
          state={{
             housingId: props.id
          }}
