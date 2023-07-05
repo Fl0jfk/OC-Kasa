@@ -3,7 +3,7 @@ import './housingGrid.scss';
 import HousingCard from "../housingCard/housingCard";
 import database from '../../database.json';
 
-function Annonce (){
+function HousingGrid (){
     return (
      <section className="grid">
     {database.map((housing) => (
@@ -13,4 +13,4 @@ function Annonce (){
     )
 }
 
-export default Annonce;
+export default HousingGrid;

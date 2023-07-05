@@ -16,7 +16,7 @@ function Navbar (){
     return (
         <nav className='navbarHeader'>
             <Link  className={onHomePage} to="/" relative='path'>Accueil</Link>
-            <Link  className={onAboutPage} to="/about" relative='path'>A propos</Link>
+            <Link  className={onAboutPage} to="/about" relative='path'>À propos</Link>
         </nav>
     )
 }

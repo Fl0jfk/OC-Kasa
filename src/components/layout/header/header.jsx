@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 function Header(){
     return (
         <header className="header">
-            <Link to="/" className="headerContainerLogo">
-                <img className="headerLogo" src={LogoKasa} alt="logo kasa"/>
-            </Link>
+            <div className="headerContainerLogo">
+                <Link to="/"><img className="headerLogo" src={LogoKasa} alt="logo kasa"/></Link>
+            </div>
             <Navbar/>
         </header>
     )

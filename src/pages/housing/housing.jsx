@@ -9,11 +9,11 @@ import './housing.scss';
 function HousingPage (){
     
     const { id } = useParams();
-    const housingPageActive = database.find((data) => data.id === id )
+    const housingPageActive = database.find((database) => database.id === id )
+
     if (!housingPageActive) {
         return <ErrorPage/>;
     }
-
     return (
         <section> 
             <Banner json={housingPageActive.pictures}/>

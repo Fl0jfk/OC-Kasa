@@ -11,11 +11,6 @@ const imageBanner = props.json;
 const imageBannerLocal = props.local;
 const [onPageImg, setOnPageImg] = useState(0);
 
-const getClassName = (index) => {
-    if (index === onPageImg) return " show";
-    return "";
-}
-
 const nextPicture = () => {
     setOnPageImg ((onPageImg + 1) % imageBanner.length);
 }
@@ -28,12 +23,13 @@ const previousPicture = () => {
     setOnPageImg (onPageImg - 1);
 }
 
-const imgNotLocal = () => {
-    return imageBanner && imageBanner.length > 0;
+const getClassName = (index) => {
+    if (index === onPageImg) return " show";
+    return "";
 }
 
 const imgOrCarousel = () => {
-    if(!imgNotLocal()) {
+    if(!imageBanner) {
         if(imageBannerLocal === "homePage") {
         return (
                 <>
@@ -51,7 +47,7 @@ const imgOrCarousel = () => {
 
 return(
     <div>
-        {imgNotLocal() && (
+        {imageBanner && (
             <>
                 <span className="slideNumber">{onPageImg + 1}/{imageBanner.length}</span>  
                 <button className="btn btnPrevious" onClick={previousPicture}><i className="fa-solid fa-chevron-left"></i></button>

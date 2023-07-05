@@ -1,7 +1,7 @@
 import React from "react";
 import LogoKasaBlack from '../../../assets/logo/logo_black.png';
 import './footer.scss';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function Footer(){
     return (

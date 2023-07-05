@@ -51,12 +51,11 @@
 
 .fa-chevron-up {
     &.activeChevron {
-        animation: rotateTest 0.3s ease-in-out;
-        animation-fill-mode: forwards;
+        animation: rotateChevron 0.3s ease-in-out forwards;
     }
 }
 
-@keyframes rotateTest {
+@keyframes rotateChevron {
     0%{
         transform: rotate(0);
     }
