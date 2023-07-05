@@ -35,9 +35,10 @@
         background-color: var(--backgroundGrey);
         padding: 20px;
         position: relative;
-        font-size: 18px;              
+        font-size: 18px; 
+        color: var(--primaryColor);             
         &.active {
-            animation: slide-in 0.3s ease-in-out;
+            animation: slide-in 0.2s ease-in-out;
         }
         &.hidden {
             display: none;
@@ -48,9 +49,26 @@
     }
 }
 
+.fa-chevron-up {
+    &.activeTest {
+        animation: rotateTest 0.3s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes rotateTest {
+    0%{
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+
 @keyframes slide-in {
     0%{
-        transform: translateY(150%);
+        transform: translateY(-100%);
         opacity: 0;
     }
     100%{
@@ -58,3 +76,6 @@
         opacity: 1;
     }
 }
+
+
+

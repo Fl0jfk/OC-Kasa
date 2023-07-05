@@ -11,7 +11,7 @@ function ScrollingMenu (props){
         setIsActive (!isActive);
     }
     
-    const chevronClass = "fa-solid " + (isActive ? "fa-chevron-down" : "fa-chevron-up");
+    const chevronClass = "fa-solid fa-chevron-up" + (isActive ? " activeTest" : "");
     const contentClass = (isActive ? "active" : "hidden") + " scrollingMenuContent";
    
     return (
